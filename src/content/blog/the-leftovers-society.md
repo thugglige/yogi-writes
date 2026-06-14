@@ -68,7 +68,7 @@ Woh aakar hamme pit ke chala gaya.
 
 Vinesh Dutt was a man of principle.
 
-Pura time principle ki chat-ta rahta tha.
+Pura time principal ki chat-ta rahta tha.
 
 Badhiya hai, humari class ko to nahi padhata tha.
 
