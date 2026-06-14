@@ -6,236 +6,39 @@ category: 'Story'
 tags: ['marriage', 'family', 'culture']
 ---
 
-"So. You like to put your meat in the fridge," said Susan, standing in the courtyard of a Rajasthani house.
+"So. You like to put your meat in the fridge", says Susan standing in the courtyard of a Rajasthani house.
 
-Susan had married an Indian software developer named Ashok.
+She married an Indian software developer who was working in her dad's company. Then, her dad kicked him out of the company and nobody hires him, so they are back to India. They both live in Ashok's parents' house in Rajasthan. This was very frustrating for Susan; the environment, the people (Apparently nobody speaks her language here), the staring of Ashok's parents because they think she was the reason their son lost his job.
 
-He worked in her father's company in Uganda.
+So she decides to divorce him and move back to Uganda where she is originally from. But she didn't want to do that right then, it was just 7 days ago that they moved to India and got married. So, she just pressed the thought inside of her for the time being. But apparently Ashok was not a very good software developer. That is why he got the only job in Uganda and that too was after 6 months of unpaid internship. So, you know how good he was. He was working for minimum wage. He could only buy food for one time with that money, for the second meal, he used to work as a waiter in a restaurant in Uganda but back in India, it was different. He had 50 bighas of land. The farming was going good actually. He could eat the vegetables he grew in his own farms and the cash flow was good. But, he was not happy because his real passion was coding that he was very poor at. So, he did what every Indian guy does, left that house to be a software developer in Uganda. As our parents are always wrong, his parents too wanted him to stay there and work on farm because they had seen his coding skills. His dad was an engineer too (of course). But he still went there and worked for a minimum wage for 2 years and now he is back so that was the back story.
 
-Then her father fired him.
+Present day:
+Susan doesn't like to sit at home all time so she wanted to do a job and the bad parents being wrong as always said, "Why would you want to do a job if you have everything you need at home." But she said she too wanted to follow her passion of what she said and I quote, "taughting english to kids".
 
-Apparently nobody else wanted to hire him either.
+Her mother-in-law who was a national level basket ball player heard that and said, "Nah... I think you should stay at home. I don't know if they (her husband) will allow the woman of the house to go out and do such thing." So, you guys can guess what happened next, the "Mom-Son-Wife" thing and as she was really new, the wife won this one and they allowed her to teach kids.
 
-So now they were back in India.
+After some days, she got her first admission and it was a sweet kid named Jyoti. She was in sixth standard and she came to Ashok's house with 6kgs weight on her shoulders and 60 grams of weight of glasses on her nose (Poor kid). So, after some basic introduction, she pulled out the English textbook from right below the Python text book.
 
-Unfortunately, they were also living in Ashok's parents' house.
+Susan opened first chapter and began to recite:
+"
+Chapter 1 : The Pact Of Ashes
 
-Susan hated almost everything about it.
+Some awaken to light. Others awaken to ashes.
 
-The weather.
+The air was unnaturally still.
 
-The language.
+Zaire’s eyes opened slowly. The world around him was cloaked in a shimmering twilight — not quite night, not quite dawn. Above, the sky stretched like cracked obsidian, painted with shifting hues of deep violet and dying gold.
 
-The people.
+Beneath his feet, polished black stone reflected a distorted version of the world, and of himself. Every step he took echoed like a whisper in a tomb.
+....
+"
 
-The fact that everybody stared at her as if she personally invented unemployment.
+She stopped and those three magical words came out of her mouth, "WTF". She though for a moment and said "I am sorry Jyoti but I don't think I can teach you. First of all there are so many words I don't even know what they mean. Second, aren't stories supposed to be stories. Since when, stories are a competition of who can write more complicated English. I can't... I really can't. "
 
-And according to Ashok's parents, she was probably the reason their son lost his job.
+As soon as she said this her phone rang, her father called and asked her to come back saying that he missed her daughter and was happy to accept both of them together. So, they moved back to Uganda. Everyone got what they wanted except the bad parents. They never let kids do what they really want even if they know they suck at it.
 
-So naturally, she decided she wanted a divorce.
+When Jyoti grew up, she became a doctor and all the people who said Indian Education System is bad, why do they put so much pressure on the kids, were there getting ready to put the same pressure on their kids saying, "Sharma ji ki ladki bhi Doctor ban gayi, tu bhi ab NEET ki taiyari karega. Kota jayega iss saal se tu bhi."
 
-Not immediately.
+The first line of the story was not even related to the story. But I know you guys just forgot about that.
 
-It had only been seven days since the wedding.
-
-Even by modern standards, that felt slightly aggressive.
-
-So she pushed the thought into a dark corner of her mind and decided to deal with it later.
-
----
-
-Now, to understand Ashok, you need some background.
-
-Ashok was not a very good software developer.
-
-And by "not very good" I mean his parents had actually seen his code.
-
-His father was an engineer.
-
-He knew what he was looking at.
-
-Ashok had fifty bighas of family land.
-
-The farm was profitable.
-
-Food was free.
-
-Vegetables grew in his own fields.
-
-Cash flow was healthy.
-
-Life was good.
-
-Unfortunately, Ashok's passion was software development.
-
-A profession at which he was remarkably bad.
-
-His parents repeatedly suggested he stay and manage the farm.
-
-But as every young person knows, parents are always wrong.
-
-So Ashok moved to Uganda.
-
-There he spent six months as an unpaid intern.
-
-Then two years earning barely enough money to feed himself.
-
-For dinner he worked part-time as a waiter.
-
-This was apparently preferable to owning productive farmland.
-
----
-
-Back in India, Susan quickly discovered that she hated sitting at home.
-
-She wanted a job.
-
-Naturally, Ashok's parents objected.
-
-"Why would you want a job when you already have everything you need?"
-
-Susan explained that she wanted to follow her passion.
-
-Her passion was, and I quote:
-
-"taughting english to kids."
-
-Ashok's mother, who had once been a national-level basketball player, considered this carefully.
-
-Then she said:
-
-"I don't know if they will allow the woman of the house to go out and do such things."
-
-The resulting Mom-Son-Wife conflict lasted exactly as long as every other Mom-Son-Wife conflict.
-
-The newest participant won.
-
-Susan got permission to teach.
-
----
-
-A few days later she got her first student.
-
-A girl named Jyoti.
-
-Sixth standard.
-
-Six kilograms of books.
-
-Sixty grams of spectacles.
-
-Poor child.
-
-After introductions, Jyoti opened her English textbook.
-
-Susan opened to Chapter One.
-
-Then she began reading.
-
----
-
-## Chapter 1: The Pact of Ashes
-
-*Some awaken to light. Others awaken to ashes.*
-
-*The air was unnaturally still.*
-
-*Zaire's eyes opened slowly.*
-
-*The world around him was cloaked in shimmering twilight — not quite night, not quite dawn.*
-
-*Above him stretched a sky of cracked obsidian painted with hues of dying gold and violet.*
-
-*Beneath his feet polished black stone reflected distorted versions of the world and of himself.*
-
----
-
-Susan stopped reading.
-
-She stared at the page.
-
-Then she looked at Jyoti.
-
-Then she looked back at the page.
-
-Finally she said:
-
-"WTF."
-
-A long silence followed.
-
-Then she closed the book.
-
-"Jyoti, I'm very sorry."
-
-"Why, ma'am?"
-
-"I don't think I can teach you."
-
-"Why?"
-
-"Because I don't know half these words."
-
-Another pause.
-
-"Also, aren't stories supposed to be stories?"
-
-"Since when did they become a competition to see who can write the most complicated English?"
-
-"I can't do this."
-
-"I really can't."
-
----
-
-At that exact moment her phone rang.
-
-It was her father.
-
-He told her he missed her.
-
-He said she should come back.
-
-He was willing to accept both of them.
-
-Even Ashok.
-
-So they moved back to Uganda.
-
-Everyone got what they wanted.
-
-Except the parents.
-
----
-
-Years passed.
-
-Jyoti grew up.
-
-She became a doctor.
-
-And all the people who spent years complaining about the Indian education system suddenly developed children of their own.
-
-Which created a strange transformation.
-
-One day they were saying:
-
-"Why do they put so much pressure on students?"
-
-The next day they were saying:
-
-"Sharma ji ki ladki doctor ban gayi."
-
-"Tu bhi NEET ki taiyari karega."
-
-"Kota jayega iss saal se."
-
----
-
-The first line of this story was not related to the story.
-
-But I know you already forgot about that.
-
----
-
-*The End*
+The End.

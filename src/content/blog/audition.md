@@ -28,7 +28,7 @@ tags: ['comedy', 'dialogue', 'absurd']
 
 **Director:** What!!
 
-**Auditioner:** Sir! Aap ek mauka to dijiye. Main aapko nirash nahi karunga. Maine saari raat jag ke iss "role" ki practice ki hai.
+**Auditioner:** Sir! Aap ek mauka to dijiye. Main aapko nirash nahi karunga. Maine saari raat jag ke iss "roll" ki practice ki hai.
 
 **Director:** Hmm. Okay. Let's try this. Imagine you're a rose seller and I come to buy a rose for my girlfriend on Valentine's Day. You have to sell me a rose. It's a simple role. You can do it, right?
 
