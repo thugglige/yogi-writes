@@ -5,8 +5,8 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: #5a4a3a;
+	--accent-dark: #3d2e1f;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -68,13 +68,13 @@ a {
 	color: var(--accent);
 }
 a:hover {
-	color: var(--accent);
+	color: var(--accent-dark);
 }
 p {
 	margin-bottom: 1em;
 }
 .prose p {
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
 }
 textarea {
 	width: 100%;

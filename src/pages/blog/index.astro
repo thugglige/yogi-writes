@@ -1,114 +1,194 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { SITE_TITLE } from '../../consts';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
+const categories = ['Story', 'Sketch', 'Note'] as const;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={`Writing — ${SITE_TITLE}`} description="All writing by Yogi — stories, sketches, and notes." />
 		<style>
 			main {
-				width: 960px;
+				width: 720px;
 			}
-			ul {
+			.page-title {
+				margin-bottom: 0.25em;
+			}
+			.page-subtitle {
+				color: rgb(var(--gray));
+				margin-bottom: 2em;
+			}
+			.filters {
 				display: flex;
+				gap: 0.5em;
 				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
+				margin-bottom: 2em;
+				padding-bottom: 1.5em;
+				border-bottom: 1px solid rgb(var(--gray-light));
 			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
+			.filter-btn {
+				padding: 0.4em 1em;
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 4px;
+				background: none;
+				color: rgb(var(--gray-dark));
+				font-family: var(--font-atkinson);
+				font-size: 0.9em;
+				cursor: pointer;
 				text-decoration: none;
-				transition: 0.2s ease;
+				transition: border-color 0.2s ease, color 0.2s ease;
 			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
+			.filter-btn:hover,
+			.filter-btn.active {
+				border-color: var(--accent);
+				color: var(--accent);
 			}
-			ul li:first-child img {
-				width: 100%;
+			.post-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
 			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
+			.post-list li {
+				padding: 1.25em 0;
+				border-bottom: 1px solid rgb(var(--gray-light));
 			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
+			.post-list li:last-child {
+				border-bottom: none;
 			}
-			ul li a {
+			.post-list a {
+				text-decoration: none;
+				color: inherit;
 				display: block;
 			}
-			.title {
-				margin: 0;
+			.post-list a:hover .post-title {
+				color: var(--accent);
+			}
+			.post-title {
+				font-size: 1.25em;
+				font-weight: 700;
+				margin: 0 0 0.25em;
 				color: rgb(var(--black));
-				line-height: 1;
+				line-height: 1.3;
 			}
-			.date {
-				margin: 0;
+			.post-meta {
+				font-size: 0.85em;
 				color: rgb(var(--gray));
+				margin-bottom: 0.35em;
 			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
+			.post-meta .category {
+				background: rgb(var(--gray-light));
+				padding: 0.15em 0.5em;
+				border-radius: 3px;
+				font-size: 0.9em;
+				margin-left: 0.5em;
 			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
+			.post-description {
+				margin: 0;
+				color: rgb(var(--gray-dark));
+				font-size: 0.95em;
 			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
+			.empty-state {
+				color: rgb(var(--gray));
+				font-style: italic;
+				padding: 2em 0;
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
+			<h1 class="page-title">Writing</h1>
+			<p class="page-subtitle">Everything in one place, newest first.</p>
+
+			<div class="filters">
+				<button class="filter-btn active" data-category="all">All</button>
+				{categories.map((cat) => (
+					<button class="filter-btn" data-category={cat}>{cat}</button>
+				))}
+			</div>
+
+			<ul class="post-list" id="post-list">
+				{posts.map((post) => (
+					<li data-category={post.data.category || 'Uncategorized'}>
+						<a href={`/blog/${post.id}/`}>
+							<p class="post-title">{post.data.title}</p>
+							<p class="post-meta">
+								<FormattedDate date={post.data.pubDate} />
+								{post.data.category && <span class="category">{post.data.category}</span>}
+							</p>
+							{post.data.description && <p class="post-description">{post.data.description}</p>}
+						</a>
+					</li>
+				))}
+			</ul>
+			<p class="empty-state" id="empty-state" style="display: none;">No posts in this category yet.</p>
 		</main>
 		<Footer />
+
+		<script>
+			function initFilters() {
+				const buttons = document.querySelectorAll('.filter-btn');
+				const items = document.querySelectorAll('#post-list li');
+				const emptyState = document.getElementById('empty-state');
+
+				// Check URL for initial category filter
+				const params = new URLSearchParams(window.location.search);
+				const initialCategory = params.get('category');
+
+				function setFilter(category: string) {
+					let visibleCount = 0;
+					items.forEach((item) => {
+						const el = item as HTMLElement;
+						if (category === 'all' || el.dataset.category === category) {
+							el.style.display = '';
+							visibleCount++;
+						} else {
+							el.style.display = 'none';
+						}
+					});
+
+					buttons.forEach((btn) => {
+						btn.classList.toggle('active', (btn as HTMLElement).dataset.category === category);
+					});
+
+					if (emptyState) {
+						(emptyState as HTMLElement).style.display = visibleCount === 0 ? '' : 'none';
+					}
+				}
+
+				buttons.forEach((btn) => {
+					btn.addEventListener('click', () => {
+						const category = (btn as HTMLElement).dataset.category || 'all';
+						setFilter(category);
+						// Update URL without reload
+						const url = new URL(window.location.href);
+						if (category === 'all') {
+							url.searchParams.delete('category');
+						} else {
+							url.searchParams.set('category', category);
+						}
+						window.history.replaceState({}, '', url.toString());
+					});
+				});
+
+				// Apply initial filter from URL
+				if (initialCategory && ['Story', 'Sketch', 'Note'].includes(initialCategory)) {
+					setFilter(initialCategory);
+				}
+			}
+
+			initFilters();
+			document.addEventListener('astro:after-swap', initFilters);
+		</script>
 	</body>
 </html>
