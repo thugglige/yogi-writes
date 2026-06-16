@@ -1,17 +1,10 @@
 ---
-
-title: "The Queue - Episode 1"
-description: "J wakes up in a line that has been waiting for him for three days."
-pubDate: 2026-06-17
-tags:
-
-* fiction
-* comedy
-* fantasy
-
+title: 'The Queue - Episode 1'
+description: 'A man wakes up in a line that has been waiting for him for three days.'
+pubDate: '2026-06-17'
+category: 'Story'
+tags: ['fantasy', 'comedy', 'afterlife', 'serial']
 ---
-
-# The Queue - Episode 1
 
 "What is this place... where is that cinema screen... why does my head feel so heavy?"
 
