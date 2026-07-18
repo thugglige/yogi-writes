@@ -10,13 +10,13 @@ const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-const categories = ['Story', 'Sketch', 'Note'] as const;
+const categories = ['Story', 'Sketch', 'Note', 'Poem'] as const;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`Writing — ${SITE_TITLE}`} description="All writing by Yogi — stories, sketches, and notes." />
+		<BaseHead title={`Writing — ${SITE_TITLE}`} description="All writing by Yogi — stories, sketches, notes, and poems." />
 		<style>
 			main {
 				width: 720px;
@@ -182,7 +182,7 @@ const categories = ['Story', 'Sketch', 'Note'] as const;
 				});
 
 				// Apply initial filter from URL
-				if (initialCategory && ['Story', 'Sketch', 'Note'].includes(initialCategory)) {
+				if (initialCategory && ['Story', 'Sketch', 'Note', 'Poem'].includes(initialCategory)) {
 					setFilter(initialCategory);
 				}
 			}

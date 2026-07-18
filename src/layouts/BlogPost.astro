@@ -61,6 +61,19 @@ const { title, description, pubDate, updatedDate, heroImage, category } = Astro.
 			.last-updated-on {
 				font-style: italic;
 			}
+			/* Poetry-specific: preserve line breaks and stanza spacing */
+			.prose.poem {
+				white-space: pre-wrap;
+			}
+			.prose.poem p {
+				margin-top: 0;
+				margin-bottom: 0;
+				line-height: 1.85;
+				white-space: pre-wrap;
+			}
+			.prose.poem p + p {
+				margin-top: 1.4em;
+			}
 		</style>
 	</head>
 
@@ -71,7 +84,7 @@ const { title, description, pubDate, updatedDate, heroImage, category } = Astro.
 				<div class="hero-image">
 					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
 				</div>
-				<div class="prose">
+				<div class={`prose${category === 'Poem' ? ' poem' : ''}`}>
 					<div class="title">
 						<div class="date">
 							<FormattedDate date={pubDate} />
